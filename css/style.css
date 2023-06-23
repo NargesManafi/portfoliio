@@ -102,7 +102,7 @@
  /* Home Section Styling */
 .home {
     display: flex;
-    background: url(./bannernew.jpg) no-repeat center;
+    background: url(../image/bannernew.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
