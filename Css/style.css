@@ -40,21 +40,21 @@
     font-family: "Pacifico";
     transition: all 0.3s ease;
 }
-.navbar .logo .logo__highlight a {
+.navbar .logo  a span{
     color:orangered;
 }
-.navbar.sticky .logo  .logo__highlight a {
+.navbar.sticky .logo  a span{
     color: white;
 }
 .navbar.sticky .logo a:hover,
- .navbar.sticky .logo a .logo__highlight:hover {
+ .navbar.sticky .logo a span:hover {
    color: black;
 }
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu .menu__btn li {
+.navbar .menu  li a{
     display: block;
     font-size: 18px;
     font-weight: 500;
@@ -65,7 +65,7 @@
 .navbar .menu li .menu__btn:hover {
     color:orangered;
 }
-.navbar.sticky .menu li .menu__btn:hover {
+.navbar.sticky .menu li a:hover {
     color: #000;
 }
 .menu-show {
@@ -79,7 +79,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     z-index: 999;
 }
-.menu-show .menu__btn {
+.menu-show a {
     color: #333;
     padding: 12px 20px;
     display: block;
@@ -88,7 +88,7 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
-.menu-show .menu__btn:hover {
+.menu-show a:hover {
     background-color: orangered;
     color: #fff;
 }
@@ -99,3 +99,49 @@
     cursor: pointer;
     display: none;
 }
+ /* Home Section Styling */
+.home {
+    display: flex;
+    background: url(../Image/bannernew.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+.home .home-content .home-content__text-1 {
+    font-size: 27px;
+}
+.home .home-content .home-content__text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .home-content__text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .home-content__text-3 .home-content__typing {
+    font-weight: 500;
+    color:orangered;
+}
+.home .home-content .home-content__web{
+    display: inline-block;
+    background: orangered;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid orangered;
+    transition: all 0.3s ease;
+    margin-right: 25px;
+}
+  .home .home-content .home-content__web:hover {
+    color: white;
+    background: #000;
+  }
