@@ -141,7 +141,147 @@
     transition: all 0.3s ease;
     margin-right: 25px;
 }
-  .home .home-content .home-content__web:hover {
+.home .home-content .home-content__web:hover {
     color: white;
     background: #000;
+}
+ /* all similar content styling code */
+section {
+    padding: 100px 0;
+}
+.about,
+.skills,
+.contact,
+.footer {
+    font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background: #fff;
+    transform: translateX(-50%);
+}
+  
+.skills,
+.contact {
+    background: #111;
+    color: #fff;
+}
+.skills .title::before,
+.contact .title::before {
+    background: #fff;
+}
+ /* about section styling */
+.about .title::after {
+    content: "who am i";
+}
+  
+.about .about-content .about-content__column--left{
+    width: 45%;
+}
+.about .about-content .about-content__column--left
+.about-content__image {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 40px 0px 40px 0px;
+}
+.about .about-content .about-content__column--right {
+    width: 55%;
   }
+.about .about-content .about-content__column--right .about-content__text {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about .about-content .about-content__column--right .about-content__text span {
+    color:orangered;
+}
+.about .about-content .about-content__column--right p {
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.about .about-content .about-content__column--right a {
+    display: inline-block;
+    background:orangered;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 3px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid orangered;
+    transition: all 0.3s ease;
+}
+.about .about-content .about-content__column--right a:hover {
+    color: orangered;
+    background: none;
+}
+   /* Social media section styling */
+.about-content__button1 {
+    float: left;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.about-content__button1 .about-content__icon {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 35px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+  
+.about-content__button1 .about-content__icon i {
+    font-size: 18px;
+    line-height: 45px;
+    color:orangered;
+    transition: all 0.3s ease-in-out;
+}
+.about-content__button1:hover {
+    width: 150px;
+}
+.about-content__button1 span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 10px;
+    margin-left: 5px;
+}
